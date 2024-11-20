@@ -1,0 +1,31 @@
+print('---- mencari celcius ke fahrenhit ----')
+def celcius_ke_fahrenheit(celcius):
+    fahrenheit = (celcius * 9/5) + 32
+    return fahrenheit
+
+print(celcius_ke_fahrenheit(0))
+print(celcius_ke_fahrenheit(100))
+
+print('---- mencari bilangan genap ----')
+def is_genap(bil_genap):
+    return bil_genap %2 == 0
+#untuk memasukan velue
+print(is_genap(4))
+print(is_genap(7))
+
+print('---- rata rata nilai 70 ----')
+def nilai_lulus(nilai):
+    if nilai >=80:
+        return 'lulus'
+    else :
+        return 'tidak lulus'
+#untuk mencetak value
+print(nilai_lulus(80))
+print(nilai_lulus(60))
+
+print('---- mencari bilangan ganjil ----')
+def bilangan(n):
+    for i in range(1, n, 2):
+        print(i, end=" ")
+#untuk memasukan velue
+bilangan(20)
